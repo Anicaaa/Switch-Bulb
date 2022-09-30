@@ -8,8 +8,13 @@ function bulbOn() {
   lightOn.setAttribute("src", "BulbOn.png");
 }
 
+function whiteBackground() {
+  document.body.style.backgroundColor = "white";
+}
+
 btnOn.addEventListener("click", function () {
   bulbOn();
+  whiteBackground();
 });
 
 // Switch OFF
@@ -18,6 +23,11 @@ function bulbOff() {
   lightOff.setAttribute("src", "BulbOff.png");
 }
 
+function darkBackground() {
+  document.body.style.backgroundColor = "black";
+}
+
 btnOff.addEventListener("click", function () {
   bulbOff();
+  darkBackground();
 });
